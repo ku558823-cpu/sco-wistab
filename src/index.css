@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sco-green: #006633;
+  --color-sco-green-dark: #004d26;
+  --color-sco-green-light: #059669;
+  --color-scom-orange: #EA580C;
+  --color-scom-red: #DC2626;
+  --color-sfiber-blue: #0284C7;
+  --color-spaisa-gold: #D97706;
+  --color-sco-navy: #0F172A;
+  --color-sco-slate: #1E293B;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #0F172A;
+    background-color: #F8FAFC;
+  }
+}
+
+/* SCO Button styles */
+.btn-sco-green {
+  background-color: #006633;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  padding: 0.625rem 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-sco-green:hover {
+  background-color: #004d26;
+  box-shadow: 0 4px 12px rgba(0, 102, 51, 0.25);
+}
+
+.btn-scom-orange {
+  background-color: #EA580C;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  padding: 0.625rem 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-scom-orange:hover {
+  background-color: #C2410C;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25);
+}
+
+.btn-sfiber-blue {
+  background-color: #0284C7;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  padding: 0.625rem 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-sfiber-blue:hover {
+  background-color: #0369A1;
+}
+
+/* Card Elevation */
+.sco-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05), 0 4px 12px rgba(15, 23, 42, 0.03);
+  transition: all 0.2s ease-in-out;
+}
+
+.sco-card:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+}
+
+.sco-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  padding: 2px 8px;
+}
+
+/* Primary Terracotta CTA specification */
+.btn-cta {
+  background-color: #E05A2B;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  height: 48px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  background-color: #C84B1F;
+}
+
+.btn-cta:active {
+  transform: translateY(2px);
+}
+
+/* Secondary / Ghost button */
+.btn-secondary-clinical {
+  border: 1.5px solid #0D2137;
+  color: #0D2137;
+  background-color: transparent;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  height: 48px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-secondary-clinical:hover {
+  background-color: rgba(13, 33, 55, 0.06);
+}
+
+.btn-secondary-white {
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  height: 48px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-secondary-white:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Input Fields matching 48px height, 4px radius, 1px boundary */
+.input-clinical {
+  height: 48px;
+  border-radius: 0.25rem;
+  border: 1px solid #CBD5E1;
+  background-color: #FFFFFF;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  color: #0D2137;
+  font-size: 0.9375rem;
+  outline: none;
+  transition: border-color 0.15s ease-in-out;
+}
+
+.input-clinical:focus {
+  border: 1.5px solid #0284C7;
+}
+
+/* Eyebrow badge styling */
+.badge-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  padding: 4px 10px;
+  background-color: rgba(2, 132, 199, 0.08);
+  color: #0284C7;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Clinical Direct",
+  "description": "Authoritative direct-to-specialist healthcare platform with transparent pricing, instant clinical triage, and verified medical appointments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
